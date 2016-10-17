@@ -1,0 +1,15 @@
+﻿@model List<Rentals.DTOs.FilmDto>
+@{
+    foreach (var film in Model)
+    {
+
+        
+        var title = (film.Series == null ? film.Name : (film.Series + ": " + film.Name));
+
+        <li>
+            <h4>@Html.ActionLink(title, "Details", "Film", new { id = film.FilmId }, new { htmlAttributes = new { } })</h4>
+            <strong>@Html.ActionLink("Genre: " + film.Genre, "Genre", new { genre = film.Genre.ToString() })</strong><hr />
+        </li>
+    }
+
+}

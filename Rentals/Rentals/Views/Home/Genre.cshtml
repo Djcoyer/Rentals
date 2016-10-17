@@ -1,0 +1,11 @@
+﻿@model List<Rentals.DTOs.FilmDto>
+
+@{
+    var title = "";
+    var genre = Model[0].Genre.ToString();
+    ViewBag.Title = genre;
+    <h2>Available Films in the @genre Genre</h2>
+}
+
+@{Html.RenderPartial("/Views/Home/_FilmDetails.cshtml", Model);}
+

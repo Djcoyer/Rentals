@@ -1,0 +1,35 @@
+﻿@model List<Rentals.DTOs.FilmDto>
+@{
+    var title = "";
+    ViewBag.Title = "Index";
+}
+
+<h2>All Films</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    @Html.ActionLink("Create New Film", "Create")
+
+
+    foreach (var film in Model)
+    {
+        if (film.Series != null)
+        {
+            title = film.Series + ": " + film.Name;
+        }
+        else
+        {
+            title = film.Name;
+        }
+        <li>
+            <h4>@Html.ActionLink(title, "Edit", new { id = film.FilmId })</h4>
+        </li>
+    }
+
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

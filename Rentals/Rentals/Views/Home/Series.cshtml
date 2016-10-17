@@ -1,0 +1,19 @@
+﻿@model List<Rentals.DTOs.FilmDto>
+@{
+    string title = Model[0].Series.ToString();
+    ViewBag.Title = title;
+}
+
+<h2>Films in @title Series</h2>
+
+@{
+    foreach (var film in Model)
+    {
+        <li><h4>@Html.ActionLink(film.Series + " : " + film.Name, "Details", new { id = film.FilmId })</h4>
+            <strong>@Html.ActionLink("Genre: " + film.Genre, "Genre", new { genre = film.Genre })</strong></li><hr />
+    }
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

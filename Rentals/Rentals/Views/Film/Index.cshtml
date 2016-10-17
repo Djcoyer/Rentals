@@ -1,0 +1,40 @@
+﻿@model Rentals.Models.Film
+@{
+    ViewBag.Title = "Details";
+}
+<form id="details" action="/Film/Rent" method="post">
+
+    @{
+        bool isSeries = (Model.Series != null ? true : false);
+        var title = (isSeries ? (Model.Series + ": " + Model.Name) : Model.Name);
+    }
+
+    <h2>@title</h2>
+    <p>@Model.Details</p><hr />
+    <h4>@Html.ActionLink("Genre: " + Model.Genre, "Genre", new { genre = Model.Genre })</h4>
+    @if (isSeries)
+    {
+        <h4>@Html.ActionLink("Series: " + Model.Series, "Series", new { series = Model.Series })</h4>
+    }
+
+    @Html.HiddenFor(model => model.FilmId)
+
+</form>
+
+<div class="btn">
+    <input type="submit" value="Rent" class="btn-primary" id="rentButton" />
+</div>
+
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<script type="text/javascript">
+    $("#rentButton").click(function () {
+        @Url.Action("/Film/Rent", new { id= Model.FilmId})
+
+        })
+
+</script>

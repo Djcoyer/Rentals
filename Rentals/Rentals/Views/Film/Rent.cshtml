@@ -1,0 +1,13 @@
+﻿@model List<Rentals.DTOs.FilmDto>
+    ViewBag.Title = "Rent";
+}
+
+<h2>Your Films</h2>
+
+@{ 
+    foreach (var film in Model)
+    {
+        <h4>@film.Name</h4><hr/>
+    }
+}
+

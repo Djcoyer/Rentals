@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FilmsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Film">
+    <Key>
+      <PropertyRef Name="FilmId" />
+    </Key>
+    <Property Name="FilmId" Type="Guid" Nullable="false" />
+    <Property Name="Genre" Type="FilmsModel.Genres" Nullable="false" />
+    <Property Name="Series" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NumberofSeries" Type="Int32" />
+    <Property Name="Available" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="FilmsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Films" EntityType="Self.Film" />
+  </EntityContainer>
+  <EnumType Name="Genres" a:ExternalTypeName="Rentals.Enums.Genres" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+</Schema>

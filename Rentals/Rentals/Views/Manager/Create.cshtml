@@ -1,0 +1,131 @@
+﻿@model Rentals.DTOs.FilmDto
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Add a New Film</h2>
+
+
+  
+  @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        
+
+        <form id="createForm" action="/Manager/CreateFilm" method="post">
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { htmlAttributes = new { @class = "control-label-md-2" } })
+            <div>
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger", id="nameValidation"})
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Year, new { htmlAttributes = new { @class = "control-label-md-2" } })
+            <div>
+                @Html.EditorFor(model => model.Year, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Year, "", new { @class = "text-danger", id="yearValidation" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Series, new { htmlAttributes = new { @class = "control-label-md-2" } })
+            <div>
+                @Html.EditorFor(model => model.Series, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Series, "", new { @class = "text-danger", id="seriesValidation" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Genre, new { htmlAttributes = new { @class = "control-label-md-2" } })
+            <div>
+                @Html.DropDownListFor(model => model.Genre, EnumHelper.GetSelectList(typeof(Rentals.Enums.Genres)), "Select one...", new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Genre, "", new { @class = "text-danger" })
+            </div>
+         </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NumberofSeries, new { htmlAttributes = new { @class = "control-label-md-2" } })
+            <div>
+                @Html.EditorFor(model => model.NumberofSeries, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NumberofSeries, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Details, new { htmlAttributes = new { @class = "control-label-md-2" } })
+            <div>
+                @Html.TextAreaFor(model => model.Details, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Details, "", new { @class = "text-danger" })
+            </div>
+        </div>
+            </form>
+
+        <div class="form-group">
+            <div class="form-inline">
+                <input type="submit" value="Create" class="btn btn-default" id="createButton" /> <span class="hidden" id="hiddenSpan">@Html.Raw("")</span>
+</div>
+            </div>
+        </div>
+   
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+
+    $('#createButton').click(function () {
+        var form = $("#createForm");
+        var link = form.attr("action");
+        var formData = form.serialize();
+        $.ajax({
+            type: "POST",
+            url: "/Manager/CreateFilm",
+            data: formData,
+            success: function (data) {
+                if (data == true) {
+                    $("#hiddenSpan").attr('class', 'alert-success');
+                    $("#hiddenSpan").text("Success!");
+                } else {
+                    $.ajax({
+                        type: "POST",
+                        url: "/Error/ErrorMessage",
+                        data: formData,
+                        success: function (data) {
+                            $("#hiddenSpan").attr('class', 'alert-success');
+                            $("#hiddenSpan").text(data);
+
+                        }
+                    })
+                }
+            }
+        })
+    })
+
+    @*var model = @Model;
+$.ajax({
+url: '@(Url.Action("CreateFilm"))',
+data: {'film' : model},
+cache: false,
+async: true,
+type: "POST",
+success: function(data){
+};
+        if(@Session["status"] == true){
+        $("#hiddenSpan").attr('class', 'alert-success');
+        $("#hiddenSpan").attr('text', data);
+
+        $.post(url, function (data) {
+            $("#nameValidation").text(data);
+        });
+
+        
+
+    *@
+
+</script>

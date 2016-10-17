@@ -1,0 +1,138 @@
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\obj\Debug\Rentals.csprojResolveAssemblyReference.cache
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\roslyn\csc.exe
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\roslyn\vbc.exe
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\roslyn\VBCSCompiler.exe
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Rentals.dll.config
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Rentals.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Rentals.pdb
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Antlr3.Runtime.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\EntityFramework.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\EntityFramework.SqlServer.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Newtonsoft.Json.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Owin.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.Helpers.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.Mvc.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.Optimization.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.Razor.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.WebPages.Deployment.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.WebPages.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.WebPages.Razor.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\WebGrease.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.Helpers.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.Mvc.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.Optimization.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.Razor.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.WebPages.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.WebPages.Deployment.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\System.Web.WebPages.Razor.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Antlr3.Runtime.pdb
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Newtonsoft.Json.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\EntityFramework.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\EntityFramework.SqlServer.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\obj\Debug\Rentals.dll
+C:\Users\CoyerDevynJoseph\Documents\Visual Studio 2015\Projects\Rentals\Rentals\obj\Debug\Rentals.pdb
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\roslyn\csc.exe
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\roslyn\vbc.exe
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\roslyn\VBCSCompiler.exe
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Rentals.dll.config
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Rentals.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Rentals.pdb
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Antlr3.Runtime.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\EntityFramework.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\EntityFramework.SqlServer.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Newtonsoft.Json.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Owin.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.Helpers.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.Mvc.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.Optimization.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.Razor.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.WebPages.Deployment.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.WebPages.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.WebPages.Razor.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\WebGrease.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.Helpers.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.Mvc.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.Optimization.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.Razor.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.WebPages.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.WebPages.Deployment.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\System.Web.WebPages.Razor.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Antlr3.Runtime.pdb
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Newtonsoft.Json.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\EntityFramework.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\EntityFramework.SqlServer.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\obj\Debug\Rentals.csprojResolveAssemblyReference.cache
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\obj\Debug\Rentals.dll
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\obj\Debug\Rentals.pdb
