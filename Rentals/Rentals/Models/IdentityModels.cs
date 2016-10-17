@@ -12,7 +12,6 @@ namespace Rentals.Models
     public class ApplicationUser : IdentityUser
     {
 
-        public List<Film> Films { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -20,6 +19,7 @@ namespace Rentals.Models
             // Add custom user claims here
             return userIdentity;
         }
+
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>

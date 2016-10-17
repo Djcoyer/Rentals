@@ -170,13 +170,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\FilmController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ManagerController.cs" />
-    <Compile Include="DTOs\CustomerDto.cs" />
     <Compile Include="DTOs\FilmDto.cs" />
     <Compile Include="Enums\Genres.cs" />
     <Compile Include="Enums\SortDropDown.cs" />
@@ -184,26 +182,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Customer.cs">
-      <DependentUpon>CustomersDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CustomerManager.cs" />
-    <Compile Include="Models\CustomerMetadata.cs" />
-    <Compile Include="Models\CustomersDb.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CustomersDb.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CustomersDb.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CustomersDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CustomersDb.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CustomersDb.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Models\Film.cs">
       <DependentUpon>FilmsDb.tt</DependentUpon>
     </Compile>
@@ -240,16 +218,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\CustomersDb.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CustomersDb.edmx</DependentUpon>
-      <LastGenOutput>CustomersDb.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\CustomersDb.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CustomersDb.edmx</DependentUpon>
-      <LastGenOutput>CustomersDb.cs</LastGenOutput>
-    </Content>
     <Content Include="Models\FilmsDb.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>FilmsDb.edmx</DependentUpon>
@@ -268,13 +236,6 @@
     </EntityDeploy>
     <Content Include="Models\FilmsDb.edmx.diagram">
       <DependentUpon>FilmsDb.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Models\CustomersDb.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CustomersDb.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\CustomersDb.edmx.diagram">
-      <DependentUpon>CustomersDb.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -320,7 +281,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Film\Details.cshtml" />
-    <Content Include="Views\Home\Genre.cshtml" />
+    <Content Include="Views\Film\Genre.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Series.cshtml" />
     <Content Include="Views\Home\_FilmDetails.cshtml" />
@@ -330,6 +291,7 @@
     <Content Include="Views\Error\CreationError.cshtml" />
     <Content Include="Views\Film\Index.cshtml" />
     <Content Include="Views\Film\Rent.cshtml" />
+    <Content Include="Views\Shared\RentedFilms.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

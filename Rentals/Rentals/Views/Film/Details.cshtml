@@ -5,32 +5,36 @@
     string id = Model.FilmId.ToString();
 }
 
+    <form id="details" action="~/Film/Rent" method="post">
 
-<form id="details" action="~/Film/Rent" method="post">
-    
-    @{ 
-        bool isSeries = (Model.Series != null ? true : false);
-        var title = (isSeries ? (Model.Series + ": " + Model.Name) : Model.Name);
-    }
+        @{
+            bool isSeries = (Model.Series != null ? true : false);
+            var title = (isSeries ? (Model.Series + ": " + Model.Name) : Model.Name);
+        }
 
-    <h2>@title</h2>
-    <p>@Model.Details</p><hr />
-    <h4>@Html.ActionLink("Genre: " + Model.Genre, "Genre", new { genre = Model.Genre })</h4>
-    @if (isSeries)
-    {
-        <h4>@Html.ActionLink("Series: " + Model.Series, "Series", new { series = Model.Series })</h4>
-    }
+        <h2>@title</h2>
+        <p>@Model.Details</p><hr />
+        <h4>@Html.ActionLink("Genre: " + Model.Genre, "Genre", new { genre = Model.Genre })</h4>
+        @if (isSeries)
+        {
+            <h4>@Html.ActionLink("Series: " + Model.Series, "Series", new { series = Model.Series })</h4>
+        }
 
-    <input type="hidden" name="id" value="@Model.FilmId" />
+        <input type="hidden" name="id" value="@Model.FilmId" />
 
-    @{            
-            //Html.HiddenFor(model => model.FilmId, new { htmlAttributes = new { id = "filmId" } })
-                }
-</form>
+       @Html.ActionLink("Rent", "Rent", new { id = Model.FilmId})
 
-<div class="btn">
+        @{
+//Html.HiddenFor(model => model.FilmId, new { htmlAttributes = new { id = "filmId" } })
+        }
+    </form>
+
+    <div class="btn">
         <input type="submit" value="Rent" class="btn-primary" id="rentButton" />
-</div>
+    </div>
+
+
+
 
 }
 
@@ -38,24 +42,24 @@
 <script src="~/Scripts/jquery.validate.min.js"></script>
 <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
 
+
+
 <script type="text/javascript">
     $("#rentButton").click(function () {
         var form = $("#details");
         var data = $("id");
-        var link = form.attr('action');
-        $.post(''@Url.Action("Rent", ))
-
-
-    /*    $.ajax({
+        var link = '@Url.Action("Rent", new { id = Model.FilmId })';
+        $.ajax({
             type: "POST",
             url: link,
-            data: data,
-            success: function () {
+            data: { id: data.attr('value') },
+            success: function (data) {
+            window.location.href = link;
 
             }
-            
 
-        })  */
+
+        })
 
     });
 

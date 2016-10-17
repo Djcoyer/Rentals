@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="FilmsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="FilmsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Films">
           <Key>
             <PropertyRef Name="FilmId" />
@@ -17,15 +17,19 @@
           <Property Name="Details" Type="nvarchar(max)" />
           <Property Name="NumberofSeries" Type="int" />
           <Property Name="Available" Type="bit" Nullable="false" />
+          <Property Name="Renter" Type="nvarchar(max)" />
         </EntityType>
         <EntityContainer Name="FilmsModelStoreContainer">
           <EntitySet Name="Films" EntityType="Self.Films" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="FilmsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="FilmsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Films" EntityType="FilmsModel.Film" />
+        </EntityContainer>
+        <EnumType Name="Genres" a:ExternalTypeName="Rentals.Enums.Genres" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
         <EntityType Name="Film">
           <Key>
             <PropertyRef Name="FilmId" />
@@ -33,16 +37,15 @@
           <Property Name="FilmId" Type="Guid" Nullable="false" />
           <Property Name="Genre" Type="FilmsModel.Genres" Nullable="false" />
           <Property Name="Series" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Year" Type="Int32" Nullable="false" />
           <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="NumberofSeries" Type="Int32" />
           <Property Name="Available" Type="Boolean" Nullable="false" />
+          <Property Name="Renter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="FilmsEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Films" EntityType="Self.Film" />
-        </EntityContainer>
-        <EnumType Name="Genres" a:ExternalTypeName="Rentals.Enums.Genres" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+        <EnumType Name="Genre" a:ExternalTypeName="Rentals.Enums.Genre" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+        <EnumType Name="myGenre" a:ExternalTypeName="Rentals.Enums.Genres" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -52,14 +55,15 @@
           <EntitySetMapping Name="Films">
             <EntityTypeMapping TypeName="FilmsModel.Film">
               <MappingFragment StoreEntitySet="Films">
-                <ScalarProperty Name="FilmId" ColumnName="FilmId" />
-                <ScalarProperty Name="Genre" ColumnName="Genre" />
-                <ScalarProperty Name="Series" ColumnName="Series" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Year" ColumnName="Year" />
-                <ScalarProperty Name="Details" ColumnName="Details" />
-                <ScalarProperty Name="NumberofSeries" ColumnName="NumberofSeries" />
+                <ScalarProperty Name="Renter" ColumnName="Renter" />
                 <ScalarProperty Name="Available" ColumnName="Available" />
+                <ScalarProperty Name="NumberofSeries" ColumnName="NumberofSeries" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Series" ColumnName="Series" />
+                <ScalarProperty Name="Genre" ColumnName="Genre" />
+                <ScalarProperty Name="FilmId" ColumnName="FilmId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

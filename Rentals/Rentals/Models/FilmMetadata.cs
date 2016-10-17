@@ -36,6 +36,8 @@ namespace Rentals.Models
             [RegularExpression(@"^[1-9][0-9]?$|^100$")]
             public Nullable<int> NumberofSeries { get; set; }
 
+            public Nullable<System.Guid> Renter { get; set; }
+
             public bool Available { get; set; }
         }
 

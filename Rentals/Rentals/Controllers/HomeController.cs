@@ -25,11 +25,7 @@ namespace Rentals.Controllers
             return View(film);
         }
 
-        public ActionResult Genre(string genre)
-        {
-            var filmGenre = films.FindAll(p => p.Genre.ToString().Equals(genre));
-            return View(filmGenre);
-        }
+      
 
         public ActionResult Series(string series)
         {

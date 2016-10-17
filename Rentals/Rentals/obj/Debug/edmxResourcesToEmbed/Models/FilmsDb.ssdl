@@ -12,6 +12,7 @@
     <Property Name="Details" Type="nvarchar(max)" />
     <Property Name="NumberofSeries" Type="int" />
     <Property Name="Available" Type="bit" Nullable="false" />
+    <Property Name="Renter" Type="nvarchar(max)" />
   </EntityType>
   <EntityContainer Name="FilmsModelStoreContainer">
     <EntitySet Name="Films" EntityType="Self.Films" Schema="dbo" store:Type="Tables" />

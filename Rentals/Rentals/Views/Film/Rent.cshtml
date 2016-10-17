@@ -1,13 +1,49 @@
 ﻿@model List<Rentals.DTOs.FilmDto>
+@{
     ViewBag.Title = "Rent";
 }
 
-<h2>Your Films</h2>
+<h2>@(User.Identity.Name)'s Films</h2>
 
-@{ 
-    foreach (var film in Model)
-    {
-        <h4>@film.Name</h4><hr/>
-    }
-}
+<div class="form-horizontal">
+    <ul>
+        @foreach (var film in Model)
+            {
 
+            <li class="">
+                <h4>@film.Name</h4>
+                <input type="submit" class="btn-primary" onclick="returnFilm(@film.FilmId)" />
+                <ul>
+                    <li><strong>@film.Genre</strong></li>
+                    <li><strong>@film.Year</strong></li>
+                </ul>
+            </li>
+        }
+    </ul>
+</div>
+
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        function returnFilm(filmId) {
+            alert("Hello");
+
+        }
+    });
+
+</script>
+
+@*$.ajax({
+        type: "POST",
+        data: filmId,
+        url: '@Url.Action("ReturnFilm")',
+
+
+    })*@

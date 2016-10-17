@@ -27,6 +27,7 @@ namespace Rentals.Models
                 filmDto.Year = film.Year;
                 filmDto.Series = film.Series;
                 filmDto.Available = film.Available;
+                filmDto.Renter = film.Renter;
                 films.Add(filmDto);
             }
 
@@ -49,6 +50,7 @@ namespace Rentals.Models
                 _film.Year = film.Year;
                 _film.Series = film.Series;
                 _film.Available = film.Available;
+                _film.Renter = film.Renter;
                 films.Add(_film);
             }
 
@@ -82,6 +84,7 @@ namespace Rentals.Models
             entityFilm.Year = filmDto.Year;
             entityFilm.Genre = filmDto.Genre;
             entityFilm.Series = filmDto.Series;
+            entityFilm.Renter = filmDto.Renter;
 
             return entityFilm;
         }
@@ -114,6 +117,7 @@ namespace Rentals.Models
             entityFilm.Year = filmDto.Year;
             entityFilm.Series = filmDto.Series;
             entityFilm.Available = filmDto.Available;
+            entityFilm.Renter = filmDto.Renter;
 
             return entityFilm;
         }

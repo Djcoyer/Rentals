@@ -115,6 +115,8 @@ namespace Rentals.Controllers
            
                 try
                 {
+                if (filmDto.Available == true)
+                    filmDto.Renter = null;
                     updateDbEntry(filmDto);
                     return RedirectToAction("Index", "Manager");
                 }

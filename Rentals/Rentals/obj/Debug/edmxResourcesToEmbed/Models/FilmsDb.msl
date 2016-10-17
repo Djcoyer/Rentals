@@ -4,14 +4,15 @@
     <EntitySetMapping Name="Films">
       <EntityTypeMapping TypeName="FilmsModel.Film">
         <MappingFragment StoreEntitySet="Films">
-          <ScalarProperty Name="FilmId" ColumnName="FilmId" />
-          <ScalarProperty Name="Genre" ColumnName="Genre" />
-          <ScalarProperty Name="Series" ColumnName="Series" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Year" ColumnName="Year" />
-          <ScalarProperty Name="Details" ColumnName="Details" />
-          <ScalarProperty Name="NumberofSeries" ColumnName="NumberofSeries" />
+          <ScalarProperty Name="Renter" ColumnName="Renter" />
           <ScalarProperty Name="Available" ColumnName="Available" />
+          <ScalarProperty Name="NumberofSeries" ColumnName="NumberofSeries" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Series" ColumnName="Series" />
+          <ScalarProperty Name="Genre" ColumnName="Genre" />
+          <ScalarProperty Name="FilmId" ColumnName="FilmId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
