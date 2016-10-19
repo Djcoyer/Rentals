@@ -64,7 +64,7 @@ namespace Rentals.Controllers
         public void ReturnFilm(Guid filmId)
         {
             var film = films.FirstOrDefault(p => p.FilmId == filmId);
-            film.Available = true;
+            film.Rented = false;
             film.Renter = null;
             updateDbEntry(film);
         }

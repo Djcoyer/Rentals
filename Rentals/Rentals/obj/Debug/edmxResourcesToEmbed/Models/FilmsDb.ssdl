@@ -11,7 +11,7 @@
     <Property Name="Year" Type="int" Nullable="false" />
     <Property Name="Details" Type="nvarchar(max)" />
     <Property Name="NumberofSeries" Type="int" />
-    <Property Name="Available" Type="bit" Nullable="false" />
+    <Property Name="Rented" Type="bit" Nullable="false" />
     <Property Name="Renter" Type="nvarchar(max)" />
   </EntityType>
   <EntityContainer Name="FilmsModelStoreContainer">

@@ -78,7 +78,7 @@ namespace Rentals.Controllers
             {
                 try
                 {
-                    filmDto.Available = true;
+                    filmDto.Rented = false;
                     filmDto.FilmId = Guid.NewGuid();
                     addDbEntry(filmDto);
                     
@@ -115,7 +115,7 @@ namespace Rentals.Controllers
            
                 try
                 {
-                if (filmDto.Available == true)
+                if (filmDto.Rented == true)
                     filmDto.Renter = null;
                     updateDbEntry(filmDto);
                     return RedirectToAction("Index", "Manager");

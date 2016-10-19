@@ -38,7 +38,8 @@ namespace Rentals.Models
 
             public Nullable<System.Guid> Renter { get; set; }
 
-            public bool Available { get; set; }
+            [Display(Name="Checked Out?")]
+            public bool Rented { get; set; }
         }
 
 

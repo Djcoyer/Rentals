@@ -16,7 +16,7 @@ namespace Rentals.Models
             var films = new List<FilmDto>();
             var db = new FilmsEntities().Films;
 
-            foreach (var film in db.Where(p => p.Available == true))
+            foreach (var film in db.Where(p => p.Rented == false))
             {
                 var filmDto  = new FilmDto();
                 filmDto.Details = film.Details;
@@ -26,7 +26,7 @@ namespace Rentals.Models
                 filmDto.NumberofSeries = film.NumberofSeries;
                 filmDto.Year = film.Year;
                 filmDto.Series = film.Series;
-                filmDto.Available = film.Available;
+                filmDto.Rented = film.Rented;
                 filmDto.Renter = film.Renter;
                 films.Add(filmDto);
             }
@@ -49,7 +49,7 @@ namespace Rentals.Models
                 _film.NumberofSeries = film.NumberofSeries;
                 _film.Year = film.Year;
                 _film.Series = film.Series;
-                _film.Available = film.Available;
+                _film.Rented = film.Rented;
                 _film.Renter = film.Renter;
                 films.Add(_film);
             }
@@ -77,7 +77,7 @@ namespace Rentals.Models
 
         private static Film updateDetails(Film entityFilm, FilmDto filmDto)
         {
-            entityFilm.Available = filmDto.Available;
+            entityFilm.Rented= filmDto.Rented;
             entityFilm.Details = filmDto.Details;
             entityFilm.Name = filmDto.Name;
             entityFilm.NumberofSeries = filmDto.NumberofSeries;
@@ -116,7 +116,7 @@ namespace Rentals.Models
             entityFilm.NumberofSeries = filmDto.NumberofSeries;
             entityFilm.Year = filmDto.Year;
             entityFilm.Series = filmDto.Series;
-            entityFilm.Available = filmDto.Available;
+            entityFilm.Rented = filmDto.Rented;
             entityFilm.Renter = filmDto.Renter;
 
             return entityFilm;

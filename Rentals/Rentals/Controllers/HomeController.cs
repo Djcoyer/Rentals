@@ -52,7 +52,7 @@ namespace Rentals.Controllers
         [HttpPost]
         public ActionResult Sort(string sortBy)
         {
-            films.Where(p => p.Available == true).ToList();
+            films.Where(p => p.Rented == true).ToList();
             var titles = sortMethod(films, sortBy);
             return PartialView("_FilmDetails", titles);
         }

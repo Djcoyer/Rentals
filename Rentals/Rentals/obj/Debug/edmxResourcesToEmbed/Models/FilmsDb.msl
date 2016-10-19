@@ -4,8 +4,8 @@
     <EntitySetMapping Name="Films">
       <EntityTypeMapping TypeName="FilmsModel.Film">
         <MappingFragment StoreEntitySet="Films">
+          <ScalarProperty Name="Rented" ColumnName="Rented" />
           <ScalarProperty Name="Renter" ColumnName="Renter" />
-          <ScalarProperty Name="Available" ColumnName="Available" />
           <ScalarProperty Name="NumberofSeries" ColumnName="NumberofSeries" />
           <ScalarProperty Name="Details" ColumnName="Details" />
           <ScalarProperty Name="Year" ColumnName="Year" />

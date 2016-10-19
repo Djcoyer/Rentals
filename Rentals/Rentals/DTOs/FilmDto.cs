@@ -14,7 +14,7 @@ namespace Rentals.DTOs
         public int Year { get; set; }
         public string Details { get; set; }
         public Nullable<int> NumberofSeries { get; set; }
-        public bool Available { get; set; }
+        public bool Rented { get; set; }
         public string Renter { get; set; }
     }
 }

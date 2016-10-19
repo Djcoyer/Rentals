@@ -21,7 +21,7 @@ namespace Rentals.Models
         public int Year { get; set; }
         public string Details { get; set; }
         public Nullable<int> NumberofSeries { get; set; }
-        public bool Available { get; set; }
         public string Renter { get; set; }
+        public bool Rented { get; set; }
     }
 }

@@ -15,8 +15,8 @@
     <Property Name="Year" Type="Int32" Nullable="false" />
     <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="NumberofSeries" Type="Int32" />
-    <Property Name="Available" Type="Boolean" Nullable="false" />
     <Property Name="Renter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Rented" Type="Boolean" Nullable="false" />
   </EntityType>
   <EnumType Name="Genre" a:ExternalTypeName="Rentals.Enums.Genre" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
   <EnumType Name="myGenre" a:ExternalTypeName="Rentals.Enums.Genres" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
