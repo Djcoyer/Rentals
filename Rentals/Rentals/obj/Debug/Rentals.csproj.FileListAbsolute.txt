@@ -205,3 +205,5 @@ C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Secur
 C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\obj\Debug\Rentals.csprojResolveAssemblyReference.cache
 C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\obj\Debug\Rentals.dll
 C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\obj\Debug\Rentals.pdb
+C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\obj\Debug\Rentals.Migrations.First.resources
+C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\obj\Debug\Rentals.csproj.GenerateResource.Cache

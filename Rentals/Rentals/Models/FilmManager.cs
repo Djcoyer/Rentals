@@ -9,12 +9,12 @@ namespace Rentals.Models
 {
     public class FilmManager
     {
-        private static FilmsEntities db = new FilmsEntities();
+        private static FilmsContext db = new FilmsContext();
 
         public static List<FilmDto> GetAvailableFilms()
         {
             var films = new List<FilmDto>();
-            var db = new FilmsEntities().Films;
+            var db = new FilmsContext().Films;
 
             foreach (var film in db.Where(p => p.Rented == false))
             {
@@ -37,7 +37,7 @@ namespace Rentals.Models
         public static List<FilmDto> GetAllFilms()
         {
             var films = new List<FilmDto>();
-            var db = new FilmsEntities().Films;
+            var db = new FilmsContext().Films;
 
             foreach (var film in db)
             {
