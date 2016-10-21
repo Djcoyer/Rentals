@@ -280,6 +280,8 @@
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\Manager\Users.cshtml" />
     <Content Include="Views\Manager\FilmDetails.cshtml" />
+    <Content Include="Views\User\Edit.cshtml" />
+    <Content Include="Views\User\UserDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

@@ -24,5 +24,10 @@ namespace Rentals.Controllers
         {
             return View(films);
         }
+
+        public ActionResult Edit(string userId)
+        {
+            return View();
+        }
     }
 }
