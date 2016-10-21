@@ -43,7 +43,7 @@
                     <strong>@film.Year</strong>
                 </div>
                 <div class="col-md-1">
-                    <input type="submit" class="btn btn-primary" onclick="returnFilm()" />
+                    <input type="submit" class="btn btn-primary" onclick="window.location.href = '@Url.Action("ReturnFilm", new {filmId = film.FilmId })'" value="Return Movie"/>
                 </div>
                 
             </div>
@@ -70,11 +70,3 @@
     });
 
 </script>
-
-@*$.ajax({
-        type: "POST",
-        data: filmId,
-        url: '@Url.Action("ReturnFilm")',
-
-
-    })*@

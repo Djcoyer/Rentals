@@ -1,7 +1,69 @@
 ﻿@model Rentals.Models.ApplicationUser
 @{
-    ViewBag.Title = "Index";
+    var title = "User Summary";
+    ViewBag.Title = title;
 }
 
-<h2></h2>
+<div class="form-horizontal">
 
+<h2>@Model.FirstName's Information</h2>
+
+    <div class="row">
+        <div class="col-md-3">
+            <h4>First Name:</h4>
+        </div>
+        <div class="col-md-3">
+            <h4>@Model.FirstName</h4>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <h4>Last Name:</h4>
+        </div>
+        <div class="col-md-3">
+            <h4>@Model.LastName</h4>
+        </div>
+    </div>
+        
+    <div class="row">
+        <div class="col-md-3">
+            <h4>Email Address:</h4>
+        </div>
+        <div class="col-md-3">
+            <h4>@Model.Email</h4>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3">
+            <h4>Home Address:</h4>
+        </div>
+        <div class="col-md-3">
+            <h4>@Model.Address</h4>
+        </div>
+    </div>
+    <br/>
+        <input type="submit" value="Edit Details" id="editButton" class="btn btn-primary" />
+
+</div>
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#editButton").click(function (data) {
+            var link = @Url.Action("Edit", new { userId = Model.Id });
+            $.ajax({
+                type: "POST",
+                url: link,
+                success: function(data){
+                    alert("Hello");
+                }
+            })
+        });
+    });
+</script>
