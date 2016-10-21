@@ -15,11 +15,6 @@ namespace Rentals.Controllers
     {
         private List<FilmDto> films = FilmManager.GetAllFilms();
 
-        public ActionResult Cart(List<string> userFilms)
-        {
-            return View("Rent", userFilms);
-        }
-
         public ActionResult Details(Guid id)
         {
             var film = films.Find(p => p.FilmId == id);
@@ -30,14 +25,6 @@ namespace Rentals.Controllers
         {
             var filmGenre = films.FindAll(p => p.Genre.ToString().Equals(genre));
             return View(filmGenre);
-        }
-
-        // GET: Film
-        [HttpPost]
-        public ActionResult Index(Guid id)
-        {
-            var movie = films.FirstOrDefault(p => p.FilmId == id);
-            return View(movie);
         }
 
         [Authorize]
@@ -67,6 +54,7 @@ namespace Rentals.Controllers
             film.Rented = false;
             film.Renter = null;
             updateDbEntry(film);
+            RedirectToAction("Index", "Home");
         }
     }
 }
