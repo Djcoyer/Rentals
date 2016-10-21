@@ -47,7 +47,7 @@ namespace Rentals.Controllers
             var manager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
             var user = manager.FindById(User.Identity.GetUserId());
             film.Renter = user.Id;
-            //film.Available = false;
+            film.Rented = true;
             updateDbEntry(film);
             List<FilmDto> userFilms = films.FindAll(p => p.Renter == user.Id);
 

@@ -183,9 +183,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201610201320082_First.cs" />
-    <Compile Include="Migrations\201610201320082_First.Designer.cs">
-      <DependentUpon>201610201320082_First.cs</DependentUpon>
+    <Compile Include="Migrations\201610171809060_InitialCreate.cs" />
+    <Compile Include="Migrations\201610171809060_InitialCreate.Designer.cs">
+      <DependentUpon>201610171809060_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610201840518_initial.cs" />
+    <Compile Include="Migrations\201610201840518_initial.Designer.cs">
+      <DependentUpon>201610201840518_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610201842449_Test.cs" />
+    <Compile Include="Migrations\201610201842449_Test.Designer.cs">
+      <DependentUpon>201610201842449_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610201844213_Test2.cs" />
+    <Compile Include="Migrations\201610201844213_Test2.Designer.cs">
+      <DependentUpon>201610201844213_Test2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -267,6 +279,8 @@
     <Content Include="Views\Film\Rent.cshtml" />
     <Content Include="Views\Shared\RentedFilms.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Manager\Users.cshtml" />
+    <Content Include="Views\Manager\FilmDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -284,8 +298,17 @@
     <Folder Include="Views\Rent\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201610201320082_First.resx">
-      <DependentUpon>201610201320082_First.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201610171809060_InitialCreate.resx">
+      <DependentUpon>201610171809060_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610201840518_initial.resx">
+      <DependentUpon>201610201840518_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610201842449_Test.resx">
+      <DependentUpon>201610201842449_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610201844213_Test2.resx">
+      <DependentUpon>201610201844213_Test2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

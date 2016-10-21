@@ -64,6 +64,22 @@ namespace Rentals.Models
 
     public class RegisterViewModel
     {
+        [Display(Name ="First Name")]
+        [Required(ErrorMessage ="Please Enter Your First Name")]
+        [StringLength(maximumLength: 20, ErrorMessage ="First Name Exceeds Maximum Length")]
+        public string FirstName { get; set; }
+
+        [Display(Name = "Last Name")]
+        [Required(ErrorMessage = "Please Enter Your Last Name")]
+        [StringLength(maximumLength: 25, ErrorMessage = "Last Name Exceeds Maximum Length")]
+
+        public string LastName { get; set; }
+
+        [Display(Name = "Address")]
+        [Required(ErrorMessage = "Please Enter Your Address")]
+        public string Address { get; set; }
+
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

@@ -11,12 +11,33 @@ namespace Rentals.Controllers
 {
     public class ManagerController : Controller
     {
-        private List<FilmDto> films = FilmManager.GetAllFilms();
+        private List<FilmDto> allFilms = FilmManager.GetAllFilms();
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Manager
         public ActionResult Index()
         {
-            return View(films);
+            return View(allFilms);
+        }
+
+        public ActionResult Users()
+        {
+            var userDetails = new List<ApplicationUser>();
+            var users = db.Users.ToList();
+            foreach (var user in users)
+            {
+               var newUser = new ApplicationUser()
+                {
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Address=user.Address,
+                    UserName=user.UserName
+                };
+
+                userDetails.Add(newUser);
+            }
+
+            return View(userDetails);
         }
 
         public ActionResult Create()
@@ -32,48 +53,13 @@ namespace Rentals.Controllers
 
         public ActionResult Edit(Guid id)
         {
-            var filmDto = films.FirstOrDefault(p => p.FilmId == id);
+            var filmDto = allFilms.FirstOrDefault(p => p.FilmId == id);
             return View(filmDto);
         }
 
-  /*      [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "FilmId,Name,Series,NumberofSeries,Year,Details,Genre")]FilmDto film)
-        {
-            var films = new FilmsEntities1();
-            
-            var exists = films.Films.Any(b => b.Name.Equals(film.Name));
-            if(!exists)
-            {
-                try
-                {
-                    film.Available = true;
-                    film.FilmId = Guid.NewGuid();
-                    db.Films.Add(film);
-                    db.SaveChanges();
-                    return RedirectToAction("Index", "Manager");
-                }
-                catch (Exception ex)
-                {
-                    Session["message"] = ex.Message;
-                    return RedirectToAction("CreationError", "Error");
-                }
-                
-            }
-            else
-            {
-                Session["message"] = "Must create a new film.";
-                Session["film"] = film;
-                return RedirectToAction("CreationError", "Error");
-            }
-                
-            
-        }
-        */
-
         public bool CreateFilm([Bind(Include = "FilmId,Name,Series,NumberofSeries,Year,Details,Genre")]FilmDto filmDto)
         {
-            var exists = films.Any(b => b.Name.Equals(filmDto.Name));
+            var exists = allFilms.Any(b => b.Name.Equals(filmDto.Name));
             if (!exists)
             {
                 try
@@ -130,6 +116,16 @@ namespace Rentals.Controllers
                 //db.Entry(filmDto).State = EntityState.Modified;
                 //db.SaveChanges();
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult FilterFilms(string filterBy)
+        {
+            var rentedFilms = allFilms.FindAll(p => p.Rented == true);
+            if (filterBy == "Rented")
+                return PartialView("FilmDetails", rentedFilms);
+            else
+                return PartialView("FilmDetails", allFilms);
         }
 
         private void updateDbEntry(FilmDto filmDto)

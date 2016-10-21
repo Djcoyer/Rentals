@@ -1,0 +1,29 @@
+﻿@model List<Rentals.DTOs.FilmDto>
+
+@{ 
+    foreach (var film in Model)
+    {
+        <div class="row">
+            <div class="col-md-2">
+                <strong>@film.Name</strong>
+            </div>
+            <div class="col-md-2">
+                <strong>@film.Year</strong>
+            </div>
+            <div class="col-md-2">
+                <strong>@film.Genre</strong>
+            </div>
+            <div class="col-md-2">
+                <strong>@(film.Series != null ? film.Series : "No Series")</strong>
+            </div>
+            <div class="col-md-2">
+                <strong>@(film.Rented == false ? "Not Rented" : "Rented To: " + film.Renter)</strong>  
+            </div>
+            <div class="col-md-1">
+                <input type="button" class="btn btn-primary" onclick="location.href='@Url.Action("/Edit", new { id = film.FilmId })'" value="Edit Film" />
+            </div>
+            
+        </div>
+        <hr/>
+    }
+}

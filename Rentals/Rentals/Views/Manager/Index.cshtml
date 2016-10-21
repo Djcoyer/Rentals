@@ -6,30 +6,44 @@
 
 <h2>All Films</h2>
 
-@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken()
-    
+<form id="indexForm" class="form-horizontal">
+
+    <input type="submit" value="Create New Film" id="createButton" class="btn btn-primary" />
+
     @Html.ActionLink("Create New Film", "Create")
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"><h4>Name</h4></div>
+            <div class="col-md-2"><h4>Year</h4></div>
+            <div class="col-md-2"><h4>Genre</h4></div>
+            <div class="col-md-2"><h4>Series</h4></div>
+            <div class="col-md-2"><h4>Status</h4></div>
+        </div>
+        <hr />
+        @{Html.RenderPartial("FilmDetails", Model);}
+    </div>
 
-    foreach (var film in Model)
-    {
-        if (film.Series != null)
-        {
-            title = film.Series + ": " + film.Name;
-        }
-        else
-        {
-            title = film.Name;
-        }
-        <li>
-            <h4>@Html.ActionLink(title, "Edit", new { id = film.FilmId })</h4>
-        </li>
-    }
-
-}
+</form>
 
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="~/Scripts/jquery.validate.min.js"></script>
 <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#createButton").click(function () {
+            var link = '@Url.Action("Create")';
+            $.ajax({
+                type: "POST",
+                success: function (data) {
+                    window.location.href = link;
+                }
+            })
+
+        });
+
+
+    });
+</script>
