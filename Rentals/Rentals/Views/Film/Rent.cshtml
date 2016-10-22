@@ -1,25 +1,56 @@
 ﻿@model List<Rentals.DTOs.FilmDto>
 @{
-    ViewBag.Title = "Rent";
+    ViewBag.Title = "";
 }
 
 <h2>@(User.Identity.Name)'s Films</h2>
 
 <div class="form-horizontal">
-    <ul>
+    <div class="row">
+        <div class="col-md-3">
+            <h4>Name</h4>
+        </div>
+        <div class="col-md-1">
+            |
+        </div>
+        <div class="col-md-3">
+            Genre
+        </div>
+        <div class="col-md-1">
+            |
+        </div>
+        <div class="col-md-3">
+            <h4>Year</h4>
+        </div>
+    </div>
+    <hr/>
         @foreach (var film in Model)
             {
-
-            <li class="">
-                <h4>@film.Name</h4>
-                <input type="submit" class="btn-primary" onclick="returnFilm(@film.FilmId)" />
-                <ul>
-                    <li><strong>@film.Genre</strong></li>
-                    <li><strong>@film.Year</strong></li>
-                </ul>
-            </li>
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>@film.Name</h4>
+                </div>
+                <div class="col-md-1">
+                    |
+                </div>
+                <div class="col-md-3">
+                    <strong>@film.Genre</strong>
+                </div>
+                <div class="col-md-1">
+                    |
+                </div>
+                <div class="col-md-3">
+                    <strong>@film.Year</strong>
+                </div>
+                <div class="col-md-1">
+                    <input type="submit" class="btn btn-primary" onclick="window.location.href = '@Url.Action("ReturnFilm", new {filmId = film.FilmId })'" value="Return Movie"/>
+                </div>
+                
+            </div>
+                
+           
         }
-    </ul>
+    
 </div>
 
 
@@ -39,11 +70,3 @@
     });
 
 </script>
-
-@*$.ajax({
-        type: "POST",
-        data: filmId,
-        url: '@Url.Action("ReturnFilm")',
-
-
-    })*@

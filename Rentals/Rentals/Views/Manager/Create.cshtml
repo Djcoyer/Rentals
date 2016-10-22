@@ -88,21 +88,10 @@
             url: "/Manager/CreateFilm",
             data: formData,
             success: function (data) {
-                if (data == true) {
+             
                     $("#hiddenSpan").attr('class', 'alert-success');
                     $("#hiddenSpan").text("Success!");
-                } else {
-                    $.ajax({
-                        type: "POST",
-                        url: "/Error/ErrorMessage",
-                        data: formData,
-                        success: function (data) {
-                            $("#hiddenSpan").attr('class', 'alert-success');
-                            $("#hiddenSpan").text(data);
-
-                        }
-                    })
-                }
+                    window.location.href = "/Manager/Index";
             }
         })
     })

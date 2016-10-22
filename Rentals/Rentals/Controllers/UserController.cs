@@ -13,6 +13,7 @@ namespace Rentals.Controllers
     public class UserController : Controller
     {
         // GET: User
+        [Authorize]
         public ActionResult Index()
         {
             var manager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
@@ -23,6 +24,15 @@ namespace Rentals.Controllers
         public ActionResult UserFilms(List<FilmDto> films)
         {
             return View(films);
+        }
+        
+        [Authorize]
+        [HttpGet]
+        public ActionResult Edit()
+        {
+            var manager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+            var user = manager.FindById(User.Identity.GetUserId());
+            return View(user);
         }
     }
 }

@@ -62,11 +62,13 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Available, new { htmlAttributes = new { @class = "control-label-md-2" } })
+            @Html.LabelFor(model => model.Rented, new { htmlAttributes = new { @class = "control-label-md-2" } })
             <div class="col-sm-1">
-                @Html.EditorFor(model => model.Available, new { @class="checkbox"})
+                @Html.EditorFor(model => model.Rented, new { @class="checkbox"})
             </div>
         </div>
+
+        @Html.HiddenFor(model => model.Renter)
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">

@@ -205,3 +205,13 @@ C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\bin\Microsoft.Owin.Secur
 C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\obj\Debug\Rentals.csprojResolveAssemblyReference.cache
 C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\obj\Debug\Rentals.dll
 C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\obj\Debug\Rentals.pdb
+C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\obj\Debug\Rentals.csproj.GenerateResource.Cache
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\obj\Debug\Rentals.csproj.GenerateResource.Cache
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\obj\Debug\Rentals.Migrations.InitialCreate.resources
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\obj\Debug\Rentals.Migrations.initial.resources
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\obj\Debug\Rentals.Migrations.Test.resources
+C:\Users\CoyerDevynJoseph\Documents\GitHub\Rentals\Rentals\Rentals\obj\Debug\Rentals.Migrations.Test2.resources
+C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\obj\Debug\Rentals.Migrations.InitialCreate.resources
+C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\obj\Debug\Rentals.Migrations.initial.resources
+C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\obj\Debug\Rentals.Migrations.Test.resources
+C:\Users\devyn\Documents\Source\Rentals\Rentals\Rentals\obj\Debug\Rentals.Migrations.Test2.resources
