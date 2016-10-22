@@ -1,8 +1,8 @@
-﻿
+﻿@model Rentals.Models.ApplicationUser
     <h4>ApplicationUser</h4>
     <hr />
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    @Html.HiddenFor(model => model.Id)
+    @Html.HiddenFor(model => model.Id, new {HtmlAttributes = new { id="this"} })
 
     <div class="form-group">
         @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })

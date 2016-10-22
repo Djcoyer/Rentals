@@ -55,15 +55,9 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
+
         $("#editButton").click(function (data) {
-            var link = @Url.Action("Edit", new { userId = Model.Id });
-            $.ajax({
-                type: "POST",
-                url: link,
-                success: function(data){
-                    alert("Hello");
-                }
-            })
+            window.location.href="/User/Edit";
         });
     });
 </script>
